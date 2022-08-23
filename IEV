@@ -1,0 +1,11 @@
+def NeedforAverages(a,b,c,d,e):
+    #AA x AA wiec prawdopodobieństwo dominującego allelu dominującego to 100% wiec ujedno potomka 1 i u drugiego 1, co dodajemy do siebie
+    pierpara = a*2
+    drupara = b * 2 #tak samo AA-Aa
+    trzepara = c * 2 #tak samo AA-aa
+    czwartpara = d * (6/4) # Aa-Aa jeden osobnik potomny bedzie miał prawdopodo. 3/4 więc u dwóch to 6/4
+    piatapara = e #Aa-aa tu u jednego potokma pradopo. 1/2 u dwóch 1 więc tylko e
+    # u 6 pary bral allelu dominującego więc odpadają
+    suma = pierpara + drupara + trzepara + czwartpara + piatapara
+    return suma
+print(NeedforAverages(17963,16084,19796,18317,16719))
