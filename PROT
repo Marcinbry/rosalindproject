@@ -17,7 +17,9 @@ kodony = {
     'UGG': 'W',     'CGG': 'R',     'AGG': 'R',     'GGG': 'G'
 }
 
-
+#słownik zawierający wszytkie kodony
+#lista pozwala na wyodrębnienie kodonów, aby była ich odpowiednia ilość trzeba podzielić długość odcinka na 3 "len(odcinek)//3", dodawanie danych zasad trójkami 
+#umożliwia fragment (odcinek[3*a: 3*a+3]), następnie lista jest przyrównywana do słownika i powstaje łańcuch białkowy 
 def aminokwas(odcinek):
     lista =[]
     for a in range(len(odcinek)//3):
