@@ -1,0 +1,11 @@
+def Mendelian(k, m, n):
+    pro = k + m + n
+    # w tym przypadku wszstkie będą miały dominujący allel
+    pro1 = ((k*(k-1))+(k*m)+(k*n))/(pro*(pro-1))
+    # w tym przypadku jeden ma prawdopodobieństwo 3/4 wystąpienia dominującego allelu, jeden ma prawd. 1/2, a jeden ma 100%, więc wszytsko trzeba sprowadzić do 4, aby mianownik się zgadzał
+    pro2 = ((4*m*k)+3*(m*(m-1))+2*(m*n))/(4*(pro*(pro-1)))
+    # w tym przypadku jeden ma 100% prawdopodobieństwo dominującego allelu, drugi 1/2, więc sprowadzamy do 2, jeden nie wsytaępuję bo wszystkie osobniki potomne miałyby allele recesywne
+    pro3 = (2*(n*k)+(n*m))/(2*(pro*(pro-1)))
+    porkon = pro1 + pro2 + pro3
+    return porkon
+print(Mendelian(22,19,27))
