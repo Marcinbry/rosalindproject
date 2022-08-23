@@ -1,3 +1,4 @@
+#funkcja replace pozwala na prostą zamianę poszczególnych zasad 
 def zamiana(odcinek):
     return odcinek.replace("T", "U")
 
