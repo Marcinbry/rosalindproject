@@ -1,3 +1,5 @@
+#program pozwalający na lizacznie zasad. Zasada zostaje dodana do słownika, gdzie jest ona kluczem, a wartością jej liczba. Na początku są dodane z wartością jeden 
+#by następnie zwiększać się jeśli występują 
 def zliczeniezasady(odcinek):
     dict = {}
     lista = []
