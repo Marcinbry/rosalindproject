@@ -1,3 +1,5 @@
+#napis jest niemodyfikowalny, więc trzeba dodać zasady do listy, nastepnie poszczególne zasady są zamieniane na właściwe. Trzeba zwrócic to
+#w postaci odwróconego  napisu dlatego "".join(map(str, lista[::-1]))
 def reverse(odcinek):
     lista  = []
     for a in odcinek:
