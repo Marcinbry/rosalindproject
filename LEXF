@@ -1,0 +1,6 @@
+def OrganizingStrings(odcinek, liczba):
+    from itertools import product
+    import sys
+    for roll in product(odcinek, repeat = liczba):
+        print("".join(roll), end=" ")
+print(OrganizingStrings("ABCDEF", 3))
