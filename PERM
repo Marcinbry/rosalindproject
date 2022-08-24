@@ -1,3 +1,6 @@
+#pierwsza część programu pozwala na zliczenie danych permutacji, jest to silnia danej liczby, tworzony jest zakres, niestety funkcja range nie włącza górnego zakresu,
+#jest do danej liczby, ale jej nie wlicza, dlatego trzeba zwiększyć górny zakres o jeden, jednocześnie liczby są dodawane do listy, gdzie można ją wykorzystać 
+# do wbydowanych bibliotek, tutaj została wykorzystana "import itertools" co pozwala na skorzystanie z permutacji 
 import itertools
 
 def permutacja(liczba):
