@@ -1,3 +1,4 @@
+#też skorzystanie z wbudowanych bibliotek, co umożliwia nam przedstawianie iloczu kartezjańskiego 
 def OrganizingStrings(odcinek, liczba):
     from itertools import product
     import sys
