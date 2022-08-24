@@ -1,3 +1,4 @@
+#utworzone zostałe dwie listy odpowiadające danym odcinkom, trzeba je równocześnie sprawdzić, gdy nie są równe w danym miejscu, zostają do siebie dodane 
 def hammingdistance(odcinek1, odcinek2):
     lista1 = []
     lista2 = []
