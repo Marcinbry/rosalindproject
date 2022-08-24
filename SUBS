@@ -1,3 +1,6 @@
+#program pozwalający na wskazanie miejsca wycinka w danym odcinku, trzeba przebadać każdy zbiór zasad po kolei tak aby taką samą długość jak wycinek, dlatego odcinek[a:b+a]
+#pozwala to również na literowanie odcinka po kolei, jeśli jest taki sam jak wycinek zwraca jego miejsce, występuje tutaj "a+1" ponieważ Python przypisuje pierwszą wartość 0,
+#dlatego trzeba zwiększyć o jeden, aby podowało prawdziwą lokalizację 
 def Haystack(odcinek, wycinek):
     b = len(wycinek)
     for a in range(len(odcinek) + 1):
