@@ -1,10 +1,10 @@
 def Mendelian(k, m, n):
     pro = k + m + n
-    # w tym przypadku wszstkie będą miały dominujący allel
+    # in this case they will all have a dominant allele
     pro1 = ((k*(k-1))+(k*m)+(k*n))/(pro*(pro-1))
-    # w tym przypadku jeden ma prawdopodobieństwo 3/4 wystąpienia dominującego allelu, jeden ma prawd. 1/2, a jeden ma 100%, więc wszytsko trzeba sprowadzić do 4, aby mianownik się zgadzał
+    #in this case one has a probability of 3/4 of the dominant allele, one has a probability of 1/2, and one has a probability of 100%
     pro2 = ((4*m*k)+3*(m*(m-1))+2*(m*n))/(4*(pro*(pro-1)))
-    # w tym przypadku jeden ma 100% prawdopodobieństwo dominującego allelu, drugi 1/2, więc sprowadzamy do 2, jeden nie wsytaępuję bo wszystkie osobniki potomne miałyby allele recesywne
+    # in this case, one has a 100% probability of a dominant allele, the other 1/2, one is not present because all descendants would have recessive alleles
     pro3 = (2*(n*k)+(n*m))/(2*(pro*(pro-1)))
     porkon = pro1 + pro2 + pro3
     return porkon
