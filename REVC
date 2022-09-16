@@ -1,8 +1,7 @@
-#napis jest niemodyfikowalny, więc trzeba dodać zasady do listy, nastepnie poszczególne zasady są zamieniane na właściwe. Trzeba zwrócic to
-#w postaci odwróconego  napisu dlatego "".join(map(str, lista[::-1]))
-def reverse(odcinek):
+#the string is unmodifiable, so you can add nucleotides to the list, then individual nucleotides are replaced with the right ones. You have to return it in the form of an inverted string so "".join(map(str, lista[::-1]))
+def reverse(dna_seq):
     lista  = []
-    for a in odcinek:
+    for a in dna_seq:
         lista.append(a)
     for b in range(len(lista)):
         if lista[b] == "A":
