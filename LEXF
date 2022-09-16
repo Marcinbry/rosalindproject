@@ -1,7 +1,7 @@
-#też skorzystanie z wbudowanych bibliotek, co umożliwia nam przedstawianie iloczu kartezjańskiego 
-def OrganizingStrings(odcinek, liczba):
+#using Python libraries, which allows you to represent the Cartesian product
+def OrganizingStrings(section, number):
     from itertools import product
     import sys
-    for roll in product(odcinek, repeat = liczba):
+    for roll in product(section, repeat = number):
         print("".join(roll), end=" ")
 print(OrganizingStrings("ABCDEF", 3))
