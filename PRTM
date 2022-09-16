@@ -3,15 +3,14 @@ waga = { "A" : 71.03711 , "C" : 103.00919 , "D" : 115.02694 , "E" : 129.04259 ,
                 "K" : 128.09496 , "L" : 113.08406 , "M" : 131.04049 , "N" : 114.04293 ,
                 "P" : 97.05276 , "Q" : 128.05858 , "R" : 156.10111 , "S" : 87.03203 ,
                 "T" : 101.04768 , "V" : 99.06841 , "W" : 186.07931 , "Y" : 163.06333 }
-#stworzona zostaje lista, która zawiera pojedyncze elementy odcinka, co pozwala na skorzystanie ze słownika w którym zawarte są ich masy, zostają dodane one do nowej 
-#listy, co pozwala je dodać do siebie
+#a list is created that contains individual elements of the protein string, which allows you to use a dictionary with its masses, they are added to a new list, which allows you to add them together
 
-def weight(odcinek):
+def weight(protein_string):
     lista =[]
     lista1 = []
     sum = 0
-    for a in range(len(odcinek)):
-        lista.append(odcinek[a])
+    for a in range(len(protein_string)):
+        lista.append(protein_string[a])
         print(lista)
     for b in lista:
         if b in waga.keys():
