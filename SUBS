@@ -1,10 +1,8 @@
-#program pozwalający na wskazanie miejsca wycinka w danym odcinku, trzeba przebadać każdy zbiór zasad po kolei tak aby taką samą długość jak wycinek, dlatego odcinek[a:b+a]
-#pozwala to również na literowanie odcinka po kolei, jeśli jest taki sam jak wycinek zwraca jego miejsce, występuje tutaj "a+1" ponieważ Python przypisuje pierwszą wartość 0,
-#dlatego trzeba zwiększyć o jeden, aby podowało prawdziwą lokalizację 
-def Haystack(odcinek, wycinek):
-    b = len(wycinek)
-    for a in range(len(odcinek) + 1):
-        if odcinek[a:b+a] == wycinek:
+#the program allows you to indicate the location of one shorter DNA in the other longer DNA, we examine each set of nucleotides in turn so that it has the same length as the shorter DNA, therefore dna_seq1 [a: b + a] allows you to spell the section sequentially if it is the same as the slice returns its place, "a + 1" appears here because Python assigns the first value to 0, so you have to increment it by one to get the real location
+def Haystack(dna_seq1, dna_seq2):
+    b = len(dna_seq2)
+    for a in range(len(dna_seq1) + 1):
+        if dna_seq1[a:b+a] == dna_seq2:
             print(a + 1, end=" ")
 
 
