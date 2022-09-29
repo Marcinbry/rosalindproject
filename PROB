@@ -1,0 +1,18 @@
+import math
+
+def Modeling_Random_Genomes(string, array):
+    cg = 0
+    at = 0
+    for a in string:
+        if a == "C" or a == "G":
+            cg += 1
+        if a == "A" or a == "T":
+            at += 1
+    array1 = array.split()
+    array2 = []
+    for i in range(0, len(array1)):
+        prob = cg * math.log10(float(array1[i]) / 2) + at * math.log10((1 - float(array1[i])) / 2)
+        array2 .append(round(prob, 3))
+    return " ".join(map(str, array2))
+
+print(Modeling_Random_Genomes("GGTTTATCCCGACCGCGGCGTATCATGCCACCAACTCTGACGTGAATAGTTAAGCCAGAATGGTTCGTCAGAGGAAGCACAACTGTCCCGGTATTCA", "0.072 0.112 0.183 0.247 0.303 0.360 0.388 0.471 0.524 0.577 0.619 0.644 0.721 0.774 0.799 0.857 0.940"))
